@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My recipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #8f1717;
+      background-image: url(img/asfalt-light.png);
+      background-size: 30%;
+      font-size: 24px;
+    }
+
+    #container {
+      /* border: 2px white solid; */
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      max-width: 800px;
+      overflow: hidden;
+      position: relative;
+      height: max-content;
+      padding-bottom: 200px;
+    }
+
+    /* Get inspiration from: https://www.youtube.com/watch?v=O1suakoXG5o  */
+
+    @property --a {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    #container::before {
+      position: absolute;
+      content: '';
+      inset: 0;
+      border: solid rgb(243, 196, 26) 0.75em;
+      border-image: conic-gradient(from var(--a),
+          #f3c41a,
+          #f07346,
+          #fd160e,
+          #f3c41a) 1;
+      filter: blur(0.5em);
+      animation: animate 4s linear infinite;
+    }
+
+    @keyframes animate {
+      to {
+        --a: 1turn;
+      }
+    }
+
+    #container img {
+      display: block;
+      width: 70%;
+      height: auto;
+      margin: 20px auto;
+      /* border: #f3c41a dotted 10px; */
+      padding: 10px;
+      box-shadow:
+        0 0 10px #f3c41a,
+        0 0 25px #f07346,
+        0 0 50px rgba(243, 196, 26, 0.4);
+    }
+
+    #container p,
+    #container ul,
+    #container ol {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+      color: rgba(240, 183, 108, 0.778);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fbb22c;
+      font-family: "Long Cang", "Arial Black";
+      font-weight: 600;
+      font-size: 3.5rem;
+      text-shadow: 0 0 10px #e9b32b;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fbb22c;
+      font-family: "Long Cang", "Arial Black";
+      font-weight: 400;
+      font-size: 3rem;
+      margin: 3rem auto 0;
+      text-shadow: 0 0 10px #e9b32b;
+    }
+
+    /* .long-cang-regular {
+      font-family: "Long Cang", cursive;
+      font-weight: 400;
+      font-style: normal;
+    } */
+    strong {
+      font-family: "Long Cang", "Arial Black";
+      ;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #e9b32b;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div id="container">
+    <header>
+      <h1 class="long-cang-regular">糖醋小排<br>Sweet and Sour Baby Back Ribs</h1>
+    </header>
+    <img src="img/img01.jpeg" alt="">
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>Pork spare ribs: about 800g–1kg (cut into small pieces)</li>
+      <li>Shaoxing rice wine: 2 tbsp</li>
+      <li>Light soy sauce: 2 tbsp</li>
+      <li>Black rice vinegar: 3–4 tbsp</li>
+      <li>White sugar: 2–3 tbsp</li>
+      <li>Oyster sauce: 1 tbsp</li>
+      <li>Pure water as needed</li>
+      <li>Ginger slices</li>
+      <li>Scallion segments</li>
+      <li>Star anise</li>
+      <li>White sesame seeds (for garnish)</li>
+      <li>Cilantro (for garnish)</li>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <li><strong>Prep the ribs:</strong> Place ribs in a pot with cold water, add scallions, ginger, and rice wine.
+        Bring to a boil to remove impurities, then drain and rinse clean.
+      </li>
+      <li><strong>Fry the ribs:</strong> Season with salt and soy sauce to marinate.
+        Heat oil in a pan to about 60% heat, fry the ribs until light golden, then set aside.</li>
+
+      <li><strong>Mix the sauce:</strong> Combine all seasonings in the Instant Pot inner pot, add the ribs and toss to
+        coat evenly. Add one bowl of water to prevent sticking.</li>
+      <li><strong>Pressure cook:</strong> Seal the lid with the valve in the Sealing position. Select Pressure Cook on
+        High for 20–25 minutes.</li>
+      <li><strong>Natural release:</strong> Once done, let it naturally release pressure for 10–15 minutes, then
+        manually release the remaining steam and open the lid.</li>
+      <li><strong>Reduce the sauce:</strong> Switch to Sauté mode and cook over medium heat until the sauce thickens and
+        coats the ribs.</li>
+    </ol>
+
+    <h2>About this dish</h2>
+    <p>Sweet and sour spare ribs (糖醋小排) is a beloved Shanghai specialty, known for its tender, melt-in-your-mouth
+      texture, harmonious sweet-and-sour flavor, and a beautiful glossy red sauce.
+      China is vast, and every region has its own flavor preferences — for Shanghainese, that flavor is sweet and sour.
+      <br>
+      <br>
+      Vinegar on its own can be sharp and piercing, but here it is gently wrapped in sweetness. You never feel the
+      graininess of the sugar, nor the bite of the vinegar. The thick sweet-and-sour sauce settles on your tongue like
+      cotton, then slowly melts away.
+      <br><br>
+      This dish is a staple on the Shanghai New Year's Eve dinner table. Growing up, my grandmother would always make
+      it. Now, living far from home in a foreign land, I make it for myself too. <br><br>Happy Chinese/Lunar New Year!
+      🧧🧧🧧🧧🧧🧧🧧
+    </p>
+    <img src="img/img03.jpg" alt="">
+    <img src="img/img02.jpg" alt="">
+
+
+  </div>
+
+
+</body>
+
+</html>
